@@ -1,0 +1,6 @@
+site_name: Codemotion 2017
+theme: material
+pages:
+- Home: index.md
+- Friday 24th: friday.md
+- Saturday 25th: saturday.md
