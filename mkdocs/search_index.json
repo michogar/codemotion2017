@@ -1,0 +1,214 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Codemotion 2017 Death Notes\n\n\n\n\nAlgunos apuntes del Codemotion 2017", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#codemotion-2017-death-notes", 
+            "text": "Algunos apuntes del Codemotion 2017", 
+            "title": "Codemotion 2017 Death Notes"
+        }, 
+        {
+            "location": "/friday/", 
+            "text": "Friday 24th November\n\n\nBuilding APIs with OpenAPIs\n\n\nDr. Pedro J. Molina\n@pmolinam\n\n\n\n\n\nOpenSource generators\n\n\nSwagger Editor\n\n\nCasos de uso:\n\n\nLegacy API\n: Una API sin documentar. Un endpoint para obtener el genero de un nombre.\nSe describe la especificaci\u00f3n de la API. \nContract\n. A partir del \nContract\n se puede generar Servers y Clientes\n\n\nContract First\n: El contrato est\u00e1 escrito en primer lugar. Se puede generar el server y el cliente.\n\n\nService Driven\n: Empezar con el servicio que es el que define el contrato. La OpenAPI se genera usando reflection sobre el servicio.\n\n\n\n\n\n\n\n\nDEMO\n\n\n\n\n\n\nSwagger UI\n\n\n\n\n\n\nAPI Management Tools. \nKONG\n\n\n\n\nUna capa extra para la API: Authentication, Role-Based Security...\n\n\n\n\n\n\nAPI Versioning:\n\n\nVersion por URL\n\n\nVersion via parametro\n\n\nVersion via headers\n\n\n\n\n\n\nAPI Escalabilidad\n\n\nSin estado\n\n\n\n\n\n\n\n\nClean Architecture\n\n\nAlvaro Garc\u00eda Loaisa\n@aloaisa\n\n\n\n\n\nArquitectura de software:\n\n\nEnterprise arcchitecture\n\n\nSystem Architecture\n\n\nApplication Architecture\n\n\n\n\n\n\n\u00bfCQRS?\n\n\n\n\nArquitectura por capas\n\n\n\n\nDificilmente escalable\n\n\nNo acepta bien los cambios\n\n\nFacilidad para saltarte las capas\n\n\nEjemplo \nGraphite\n\n\n\n\nEvent Driven Architecture\n\n\n\n\nPartes de l\u00f3gica separada que est\u00e1 subscritan a un \nbroker\n\n\nMuy desacoplada\n\n\nMara\u00f1a de eventos\n\n\nMuy escalable\n\n\nbroker\n es un \u00fanico punto de fallo\n\n\nCompleja de implementar\n\n\nTransacionalidad de operaciones entre unidades de procesado.\n\n\n\n\nPlug-In Architecture\n\n\n\n\nTenemos un core y se van conectando componentes\n\n\nSe define una interfaz en el \nCore\n\n\nMala escalabilidad\n\n\nEjemplo, Eclipse\n\n\n\n\nMicroservicios\n\n\n\n\nDesplegados muchos servicios con una responsabilidad concreta cada uno\n\n\nCompletamente desacoplada\n\n\n\n\nHexagonal Architecture\n\n\n\n\nArquitectura de capas, pero como una cebolla\n\n\nPuertos y adaptadores, externo e internos.\n\n\nMuchas transformaciones de datos entre las capas. Disminuye el perfomance\n\n\n\n\nClean Architecture\n\n\nSpace-Based Architecture\n\n\n\n\nZZZZZZzz\n\n\n\n\nDevOps\n\n\n\n\nSaber el ecosistema en el que va a vivir.\n\n\nDonde se va a desplegar.\n\n\n\n\nProgressive Web Applications Orientadas a Componentes con VueJS\n\n\nRafael Casuso Romate\n@Rafael_Casuso\n\n\n\n\n\nSingle File Components\n\n\n\n\nOficina de Historias de Usuario y otros memes instrumentales\n\n\nRoberto Canales\n@rcanalesmora\n\n\n\n\n\n4 Pasos\n\n\nSubir energia\n\n\nBajar egos\n\n\nVaciar vasoe JS\n*\n\n\n\n\n\n\nkahoot.it\n\n\nTe gusta programar o las endorfinas?\n\n\nProgramadores frustrados -\n aeromodelismo y fotograf\u00eda\n\n\nEl bueno siempre est\u00e1 jodido\n\n\nHay que aprender los comceptos no los frameworks\n\n\nOrientaci\u00f3n a aspectos\n\n\n\n\n\n\nPatrones de dise\u00f1o:\n\n\nDise\u00f1o GoF\n\n\nGRASP\n\n\nAnti-Patrones\n\n\n\n\n\n\nRefactorizaci\u00f3n\n\n\nProgramaci\u00f3n Reactiva \nhttps://www.reactivemanifesto.org/\n\n\nIntegraci\u00f3n Continua, generar mierda continuamente.\n\n\nAppDynamics\n \n \nBELK\n\n\nEs facil que te pierdas entre tanta tecnolog\u00eda\n\n\nAportar valor\n\n\n12 principios del Manifiesto Agil\n\n\nDesde el punto de vista de negocio buscan que aportemos valor.\n\n\nIteraciones cortas para que no se organice una orgia tecnol\u00f3gica\n\n\nNo es que no tengamos memoria, es que no tenemos \u00edndices en la base de datos para recuperarla.\n\n\nUn programador debe probar y se lo pasa al compa\u00f1ero para probar (\nGuia de demostraci\u00f3n\n)\n\n\n\n\nAnarchy in the JS (Anarchy.JS)\n\n\nDani Latorre\n@dani_latorre\n\nAlberto Gualis\n@gualison\n\n\n\n\n\nTest de componentes para Vue, Angular y React.\n\n\nEntre Vue y React utiliza un Wrapp en test para usar \nmount\n.\n\n\n\n\n    beforeEach(async () =\n {\n\n    })\n\n\n\n\nPatr\u00f3n \nbuilder\n se instancia el elemento en la llamada en la que se devuelve\n\n\n\n\nPage Object Implementation\n\n\nSetInmediate\n termina todas las promises que est\u00e9n lanzadas. Para testing.\n\n\nDesacoplar el router. Validaci\u00f3n...\n\n\nE2E - Test de aceptaci\u00f3n. \nCucumber\n.\n\n\nRETIROS!!!\n\n\n\n\nProgramaci\u00f3n Reactiva con RxJS\n\n\nPablo Magaz\n@pablo_magaz\n\n\n\n\n\nProgramacion orientada al manejode streams\n\n\nSe representan los streams como secuencias observables.\n\n\nOperadores LINQ\n\n\nhttp://rxmarbles.com\n\n\n\n\nPatron Observer\n\n\n\n\nUn productor de informaci\u00f3n \nObservable\n y un consumidor, \nObserver\n.\n\n\nDiagramas de canicas\n\n\nTODO es un stream, y TODO es un Observable\n\n\n\n\nObservables:\n\n\n\n\nFinitos: \nrange\n\n\nInifinitos: \nfromEvent\n\n\n\n\n\n\n\n\nEl \nobserver\n es el consumidor de informaci\u00f3n:\n\n\n\n\nnext\n: notifica un valor emitido por el \nObservable\n\n\nerror\n\n\ncomplete\n\n\n\n\n\n\nLa suscripci\u00f3n es que permite que el Observer reciba notificaciones del stream\n\n\n\u00bfQuien tiene la iniciativa de obtener informaci\u00f3n?:\n\n\nPULL\n\n\nPUSH: es la que usa RxJS\n\n\n\n\n\n\n\n\nPatron Iterator\n\n\nPodemos recorrer elementos de una lista mediante el m\u00e9todo \nnext\n\n\nProgramaci\u00f3n Funcional\n\n\n\n\nTodo est\u00e1 pensado al empleo de funciones\n\n\nFunciones Puras y Funciones de Orden Superior (HOC)\n\n\n\n\nNo generan estructuras de datos intermedias. \n\n\nOperators Everywhere\n\n\n\n\nOperadores de filtrado:\n\n\nfilter\n\n\ntake\n\n\nfirst\n\n\n\n\n\n\nOperadores Matem\u00e1ticos\n\n\ncount\n\n\nmax\n\n\n\n\n\n\n\n\nOperadores de transformaci\u00f3n\n\n\n\n\nmapTo\n\n\npluck\n\n\nmap\n\nOperadores de combinaci\u00f3n\n\n\n\n\n\n\n\n\nUn Observable puede emitir otros Observables\n\n\n\n\nMuchos operadores que acaban en Map, combinaci\u00f3n de Map con otros operadores:\n\n\nmergeMap\n\n\nswitchMap\n\n\n...\n\n\n\n\n\n\nEl Blog Isom\u00f3rfico\n\n\n\n\nSobrevive al inframundo de los tests end-to-end\n\n\nGustavo Marin\n@guumaster\n\n\n\n\n\n\n\nVentajas:\n\n\n\n\nMas fiables que los unitario\n\n\nVisi\u00f3n general del funcionamiento\n\n\nSe detectan errores m\u00e1s r\u00e1pidamente\n\n\nCasos de usos reales\n\n\nAutomatizaci\u00f3n\n\n\nDesatendidas\n\n\nVelocidad\n\n\n\n\n\n\n\n\nInconvenientes\n\n\n\n\nComplejidad, alta curva de aprendizaje\n\n\nFr\u00e1giles\n\n\nSon lentos\n\n\nVentajas a medio / largo plazo\n\n\n\n\n\n\n\n\nGherkin 101\n\n\n\n\n\n\nBuenas pr\u00e1cticas\n\n\n\n\nDesarrollo con el due\u00f1o de producto\n\n\nHappy Paths, caminos de todo va a ir bien.\n\n\nNo reutilizar nada, ser independientes\n\n\nMas declarativos menos imperativos\n\n\n\n\nPatron de PageObject\n\n\n\n\nEncapsular las APIs de webdriver/HTML\n\n\nNo 100% testeo de la App", 
+            "title": "Friday 24th"
+        }, 
+        {
+            "location": "/friday/#friday-24th-november", 
+            "text": "", 
+            "title": "Friday 24th November"
+        }, 
+        {
+            "location": "/friday/#building-apis-with-openapis", 
+            "text": "Dr. Pedro J. Molina\n@pmolinam   OpenSource generators  Swagger Editor  Casos de uso:  Legacy API : Una API sin documentar. Un endpoint para obtener el genero de un nombre.\nSe describe la especificaci\u00f3n de la API.  Contract . A partir del  Contract  se puede generar Servers y Clientes  Contract First : El contrato est\u00e1 escrito en primer lugar. Se puede generar el server y el cliente.  Service Driven : Empezar con el servicio que es el que define el contrato. La OpenAPI se genera usando reflection sobre el servicio.     DEMO    Swagger UI    API Management Tools.  KONG   Una capa extra para la API: Authentication, Role-Based Security...    API Versioning:  Version por URL  Version via parametro  Version via headers    API Escalabilidad  Sin estado", 
+            "title": "Building APIs with OpenAPIs"
+        }, 
+        {
+            "location": "/friday/#clean-architecture", 
+            "text": "Alvaro Garc\u00eda Loaisa\n@aloaisa   Arquitectura de software:  Enterprise arcchitecture  System Architecture  Application Architecture    \u00bfCQRS?", 
+            "title": "Clean Architecture"
+        }, 
+        {
+            "location": "/friday/#arquitectura-por-capas", 
+            "text": "Dificilmente escalable  No acepta bien los cambios  Facilidad para saltarte las capas  Ejemplo  Graphite", 
+            "title": "Arquitectura por capas"
+        }, 
+        {
+            "location": "/friday/#event-driven-architecture", 
+            "text": "Partes de l\u00f3gica separada que est\u00e1 subscritan a un  broker  Muy desacoplada  Mara\u00f1a de eventos  Muy escalable  broker  es un \u00fanico punto de fallo  Compleja de implementar  Transacionalidad de operaciones entre unidades de procesado.", 
+            "title": "Event Driven Architecture"
+        }, 
+        {
+            "location": "/friday/#plug-in-architecture", 
+            "text": "Tenemos un core y se van conectando componentes  Se define una interfaz en el  Core  Mala escalabilidad  Ejemplo, Eclipse", 
+            "title": "Plug-In Architecture"
+        }, 
+        {
+            "location": "/friday/#microservicios", 
+            "text": "Desplegados muchos servicios con una responsabilidad concreta cada uno  Completamente desacoplada", 
+            "title": "Microservicios"
+        }, 
+        {
+            "location": "/friday/#hexagonal-architecture", 
+            "text": "Arquitectura de capas, pero como una cebolla  Puertos y adaptadores, externo e internos.  Muchas transformaciones de datos entre las capas. Disminuye el perfomance", 
+            "title": "Hexagonal Architecture"
+        }, 
+        {
+            "location": "/friday/#clean-architecture_1", 
+            "text": "", 
+            "title": "Clean Architecture"
+        }, 
+        {
+            "location": "/friday/#space-based-architecture", 
+            "text": "ZZZZZZzz", 
+            "title": "Space-Based Architecture"
+        }, 
+        {
+            "location": "/friday/#devops", 
+            "text": "Saber el ecosistema en el que va a vivir.  Donde se va a desplegar.", 
+            "title": "DevOps"
+        }, 
+        {
+            "location": "/friday/#progressive-web-applications-orientadas-a-componentes-con-vuejs", 
+            "text": "Rafael Casuso Romate\n@Rafael_Casuso   Single File Components", 
+            "title": "Progressive Web Applications Orientadas a Componentes con VueJS"
+        }, 
+        {
+            "location": "/friday/#oficina-de-historias-de-usuario-y-otros-memes-instrumentales", 
+            "text": "Roberto Canales\n@rcanalesmora   4 Pasos  Subir energia  Bajar egos  Vaciar vasoe JS\n*    kahoot.it  Te gusta programar o las endorfinas?  Programadores frustrados -  aeromodelismo y fotograf\u00eda  El bueno siempre est\u00e1 jodido  Hay que aprender los comceptos no los frameworks  Orientaci\u00f3n a aspectos    Patrones de dise\u00f1o:  Dise\u00f1o GoF  GRASP  Anti-Patrones    Refactorizaci\u00f3n  Programaci\u00f3n Reactiva  https://www.reactivemanifesto.org/  Integraci\u00f3n Continua, generar mierda continuamente.  AppDynamics     BELK  Es facil que te pierdas entre tanta tecnolog\u00eda  Aportar valor  12 principios del Manifiesto Agil  Desde el punto de vista de negocio buscan que aportemos valor.  Iteraciones cortas para que no se organice una orgia tecnol\u00f3gica  No es que no tengamos memoria, es que no tenemos \u00edndices en la base de datos para recuperarla.  Un programador debe probar y se lo pasa al compa\u00f1ero para probar ( Guia de demostraci\u00f3n )", 
+            "title": "Oficina de Historias de Usuario y otros memes instrumentales"
+        }, 
+        {
+            "location": "/friday/#anarchy-in-the-js-anarchyjs", 
+            "text": "Dani Latorre\n@dani_latorre\n\nAlberto Gualis\n@gualison   Test de componentes para Vue, Angular y React.  Entre Vue y React utiliza un Wrapp en test para usar  mount .       beforeEach(async () =  {\n\n    })  Patr\u00f3n  builder  se instancia el elemento en la llamada en la que se devuelve   Page Object Implementation  SetInmediate  termina todas las promises que est\u00e9n lanzadas. Para testing.  Desacoplar el router. Validaci\u00f3n...  E2E - Test de aceptaci\u00f3n.  Cucumber .  RETIROS!!!", 
+            "title": "Anarchy in the JS (Anarchy.JS)"
+        }, 
+        {
+            "location": "/friday/#programacion-reactiva-con-rxjs", 
+            "text": "Pablo Magaz\n@pablo_magaz   Programacion orientada al manejode streams  Se representan los streams como secuencias observables.  Operadores LINQ  http://rxmarbles.com", 
+            "title": "Programaci\u00f3n Reactiva con RxJS"
+        }, 
+        {
+            "location": "/friday/#patron-observer", 
+            "text": "Un productor de informaci\u00f3n  Observable  y un consumidor,  Observer .  Diagramas de canicas  TODO es un stream, y TODO es un Observable   Observables:   Finitos:  range  Inifinitos:  fromEvent     El  observer  es el consumidor de informaci\u00f3n:   next : notifica un valor emitido por el  Observable  error  complete    La suscripci\u00f3n es que permite que el Observer reciba notificaciones del stream  \u00bfQuien tiene la iniciativa de obtener informaci\u00f3n?:  PULL  PUSH: es la que usa RxJS", 
+            "title": "Patron Observer"
+        }, 
+        {
+            "location": "/friday/#patron-iterator", 
+            "text": "Podemos recorrer elementos de una lista mediante el m\u00e9todo  next", 
+            "title": "Patron Iterator"
+        }, 
+        {
+            "location": "/friday/#programacion-funcional", 
+            "text": "Todo est\u00e1 pensado al empleo de funciones  Funciones Puras y Funciones de Orden Superior (HOC)   No generan estructuras de datos intermedias.", 
+            "title": "Programaci\u00f3n Funcional"
+        }, 
+        {
+            "location": "/friday/#operators-everywhere", 
+            "text": "Operadores de filtrado:  filter  take  first    Operadores Matem\u00e1ticos  count  max     Operadores de transformaci\u00f3n   mapTo  pluck  map \nOperadores de combinaci\u00f3n     Un Observable puede emitir otros Observables   Muchos operadores que acaban en Map, combinaci\u00f3n de Map con otros operadores:  mergeMap  switchMap  ...    El Blog Isom\u00f3rfico", 
+            "title": "Operators Everywhere"
+        }, 
+        {
+            "location": "/friday/#sobrevive-al-inframundo-de-los-tests-end-to-end", 
+            "text": "Gustavo Marin\n@guumaster    Ventajas:   Mas fiables que los unitario  Visi\u00f3n general del funcionamiento  Se detectan errores m\u00e1s r\u00e1pidamente  Casos de usos reales  Automatizaci\u00f3n  Desatendidas  Velocidad     Inconvenientes   Complejidad, alta curva de aprendizaje  Fr\u00e1giles  Son lentos  Ventajas a medio / largo plazo     Gherkin 101", 
+            "title": "Sobrevive al inframundo de los tests end-to-end"
+        }, 
+        {
+            "location": "/friday/#buenas-practicas", 
+            "text": "Desarrollo con el due\u00f1o de producto  Happy Paths, caminos de todo va a ir bien.  No reutilizar nada, ser independientes  Mas declarativos menos imperativos", 
+            "title": "Buenas pr\u00e1cticas"
+        }, 
+        {
+            "location": "/friday/#patron-de-pageobject", 
+            "text": "Encapsular las APIs de webdriver/HTML  No 100% testeo de la App", 
+            "title": "Patron de PageObject"
+        }, 
+        {
+            "location": "/saturday/", 
+            "text": "Saturday 25th Nov\n\n\nJavascript as\u00edncrono y la (no) concurrencia\n\n\nV\u00edctor Calz\u00f3n\n@kungfunk\n\nAlberto Para\n@albpara\n\n\n\n\n\nFuncionamiento del \nCall Stack\n. Las funciones se van metiendo en la pila de llamadas seg\u00fan se necesitan. \n\n\nEl event loop est\u00e1 pendiente de la pila. Si esta est\u00e1a vacia, coje elementos de la cola de callbacks.\n\n\nLa pila siempre tiene que estar vacia para que el \nEvent Loop\n ejecute algo de la cola.\n\n\n\n\nCallbacks\n\n\n\n\nLos \ncallbacks\n son s\u00edncronos\n\n\nSi diagonalizamos el c\u00f3digo perdemos el control sobre la gesti\u00f3n de errores\n\n\n\n\nPromises\n\n\n\n\nUna \npromise\n es como un ticket de comida de un restaurante de comida r\u00e1pida, tienes el ticket y en el futuro ser\u00e1 una hamburguesa.\n\n\nMejora el manejo de errores.\n\n\nSon inmutables\n\n\nExplicaciones sobre \nPromise.all\n\n\n\n\nGenerators\n\n\n\n\n\n\nEmpieza la fiesta...\n\n\nfunction *generator() {\n    yield 1;\n}\n\n\nconst g = generator\nconsole.log(g.next())\n\n\n\n\n\n\nEn un generador podemos parar la ejecuci\u00f3n de nuestro c\u00f3digo\n\n\n\n\nPuedes generar c\u00f3digo que no sea muy legible, hay que tener cuidado\n\n\n\n\nasync / await\n\n\n\n\nLos programadores no tienen porque ser malos dise\u00f1adores de interfaces\n\n\nSebastian Hermida\n@sbastn\n\n\n\nhttps://howdns.works\n\n\n\n\nWireframes, esqueleto de una pantalla. Comunicar una idea.\n\n\nAccesibilidad, software para todo tipo de capacidades y discapacidades f\u00edsicas\n\n\nBranding, tono y coherencia de la imagen de tu producto\n\n\nPersonas, abstracci\u00f3n del usuario. Entender para quien est\u00e1s creando esta app\n\n\nUI, ayudar al usuario a realizar una tarea\n\n\nUsabilidad, quitar problemas, barreras\n\n\nDise\u00f1o visual\n\n\nEntrevistas de usuarios. Te ayuda a saber si est\u00e1s construyendo el producto para las personas correctas. \n\u00bfQu\u00e9 quieren conseguir y porqu\u00e9?\n, y \n\u00bfC\u00f3mo lo haces ahora?\n\n\nDise\u00f1o de la interacci\u00f3n\n\n\nPrototipos, wireframes que testean un flujo concreto\n\n\nPerfomance\n\n\n\n\nComo influimos los desarrolladores en la UX\n\n Dise\u00f1o de la APIs influye en la experiencia del usuario\n\n Docs\n\n\n\n\nSingle Responsability Principle: crear pantallas con pocas tareas\n\n\nNewspaper Code Structure: Lo m\u00e1s importante se tiene que ver r\u00e1pido. \n\n\nYAGNI: No dise\u00f1es para todas las posibilidades solo para las mas probables\n\n\nGood Names: texto real\n\n\nDRY: Confirmaciones de las actividades. Repite, repite...\n\n\nTDD: Armar, actuar, afirmar comentado en el test\n\n\nMock, Stub: stubea lo que no te importa\n\n\nAbstractions: buscar para un usuario tiene un nivel de abstracci\u00f3n que seleccionar\n\n\nException handling: Error en la base de datos en la pantalla es mal, dale opciones si las hay y si no feedback\n\n\nDelaying: no preguntar todo a la vez. Tener una conversaci\u00f3n\n\n\nConsistency: Se debe definir un cat\u00e1logo\n\n\n\n\nDEMO\n: A partir de una interfaz terrible se va refactorizando a una interfaz limpia\n\n\n\n\nNo explotes los datos al usuario, deja que el usuario vea los datos como magia\n\n\nQue no te moleste el whitespace\n\n\nAlienado todo.\n\n\nCoherencia, como le hablas al usuario\n\n\nSquint, ponte vizco a ver si ves lo que se tiene que ver.\n\n\nCopia, pero entendiendo\n\n\n\n\nNo dise\u00f1es para todos los casos, solo para los m\u00e1s probables\n\n\nDe RESTful a GraphQL: revolucionando la forma de comunicaci\u00f3n entre cliente y servidor\n\n\nJos\u00e9 Mar\u00eda Rodr\u00edguez Hurtado\n@durbon\n\n\n\nREST\n\n\n\n\nBreve repaso de REST\n\n\nProblemas que tiene REST:\n\n\nMas peticiones\n\n\nExceso de datos\n\n\nDocumentar es un dolor\n\n\nPobremente tipada\n\n\n\n\n\n\n\n\nGraphQL\n\n\n\n\nLo desarroll\u00f3 Facebook desde 2012, lo liber\u00f3 en 2015 y lo usan muchas empresas\n\n\nEs una especificaci\u00f3n\n\n\n\n\nsingle endpoint\n\n\n/graphql\n\n\n\n\n\n\n\nVemos los recursos como un grafo\n\n\n\n\nLa \nmutation\n es como un POST en REST. Sirve para crear o modificar un recurso\n\n\n\n\nCore Principles\n\n\n\n\nEs fuertemente tipado \n\n\nEl servidor expone los datos que quiere mostrar. Lo hace a trav\u00e9s de la definici\u00f3n de \nschema\n\n\nEstructura vs Comportamiento\n\n\nLa funci\u00f3n \nresolver\n es la encargada de obtener los datos al cliente. Se encarga de comprobar si los datos est\u00e1n en el contexto.\n\n\nLos requerimientos de datos los est\u00e1 definiendo el cliente.   \n\n\nGraphQL Servers desacoplado \nStitching\n\n\nGraphQL.org\n\n\ngraphql-js\n\n\n\n\nGraphQL ha muerto: Vivan las APIs REST con Hypermedia\n\n\nJorge Ferrer\n\nJos\u00e9 Manuel Navarro\n@jmnavarro\n\n\n\n\n\nPrimero conoce bien tu contexto y tus necesidades\n\n\nConoce las herramientas que tienes a t\u00fa mano\n\n\nNo permitas que otros elijan por ti no m\u00e1s (X is dead)\n\n\nAPI Economy\n\n\nVuelve a salir la met\u00e1fora del enchufe en las APIs.\n\n\n\n\nComo se pueden evolucionar APIs\n\n\n\n\n\n\nREST:\n\n\n\n\nHypermedia\n\n\nShared Vocabulary\n\n\n\n\n\n\n\n\nRichardson Maturity Model\n\n\n\n\n\n\nURL de entrada\n\n\n\n\nTipos de control estandar \nIANA\n\n\nHAL\n\n\nSe puede proporcionar una lista de acciones\n\n\nSiren\n\n\nSe pueden pasar por la API los campos de un formulario\n\n\nREST no tiene tipos pero se pueden definir. \nschema.org\n es una web de tipos de cosas que se pueden encontrar en internet. \n\n\nEn casi cualquier API vas a necesitar crear tus propios tipos. Que no sea el modelo de datos ni el modelo de negocio ya que si cambias, obligar\u00e1s a cambiar a los clientes.\n\n\nAislando los clientes de nuestros modelos haciendo un mapeo con \nschema.org\n\n\nRequieren muchas peticiones, se puede manejar con par\u00e1metros. El n\u00famero de peticiones depende de t\u00fa API REST\n\n\nRESTful Web APIS\n\n\n\n\n\n\nClaves\n\n\n\n\nAtenci\u00f3n al mapeo de conceptos\n\n\nEstudia y aplica tipos de datos\n\n\nNo ates la API a un formato de respuesta espec\u00edfico\n\n\n\n\nDesarrollo en el cliente\n\n\n\n\nCada vez hay m\u00e1s cantidad de tipos de clientes\n\n\nSe programan clientes como un game Loop\n\n\nRESTful Web Clients\n\n\n\n\n\n\n\n\nevolvable-apis.org\n\n\n\n\nLa programaci\u00f3n funcional en la pr\u00e1ctica ... con todas sus consecuencias.\n\n\nJuan Manuel Serrano Hidalgo\n\n\n\n\n\nDesarrollo de una App de Geofence\n\n\nHay que detectar:\n\n\nDescripci\u00f3n de las funciones\n\n\nComorl!!\n\n\nSe traduce una descripci\u00f3n puramente declarativa\n\n\n\n\n\n\nLas descripciones se realizan como DSL\n\n\n\n\nImplementar los DSL\n\n\n\n\ntrait\n define una interfaz en Scala.\n\n\nDespu\u00e9s de la definici\u00f3n del interfaz, empieza la implementaci\u00f3n con un framework. Y llega a un punto en el que se muestra que nos hemos acoplado a una interpretaci\u00f3n as\u00edncrona.\n\n\nConstructor de tipos se a\u00f1ade a la interfaz.", 
+            "title": "Saturday 25th"
+        }, 
+        {
+            "location": "/saturday/#saturday-25th-nov", 
+            "text": "", 
+            "title": "Saturday 25th Nov"
+        }, 
+        {
+            "location": "/saturday/#javascript-asincrono-y-la-no-concurrencia", 
+            "text": "V\u00edctor Calz\u00f3n\n@kungfunk\n\nAlberto Para\n@albpara   Funcionamiento del  Call Stack . Las funciones se van metiendo en la pila de llamadas seg\u00fan se necesitan.   El event loop est\u00e1 pendiente de la pila. Si esta est\u00e1a vacia, coje elementos de la cola de callbacks.  La pila siempre tiene que estar vacia para que el  Event Loop  ejecute algo de la cola.", 
+            "title": "Javascript as\u00edncrono y la (no) concurrencia"
+        }, 
+        {
+            "location": "/saturday/#callbacks", 
+            "text": "Los  callbacks  son s\u00edncronos  Si diagonalizamos el c\u00f3digo perdemos el control sobre la gesti\u00f3n de errores", 
+            "title": "Callbacks"
+        }, 
+        {
+            "location": "/saturday/#promises", 
+            "text": "Una  promise  es como un ticket de comida de un restaurante de comida r\u00e1pida, tienes el ticket y en el futuro ser\u00e1 una hamburguesa.  Mejora el manejo de errores.  Son inmutables  Explicaciones sobre  Promise.all", 
+            "title": "Promises"
+        }, 
+        {
+            "location": "/saturday/#generators", 
+            "text": "Empieza la fiesta...  function *generator() {\n    yield 1;\n}  const g = generator\nconsole.log(g.next())    En un generador podemos parar la ejecuci\u00f3n de nuestro c\u00f3digo   Puedes generar c\u00f3digo que no sea muy legible, hay que tener cuidado", 
+            "title": "Generators"
+        }, 
+        {
+            "location": "/saturday/#async-await", 
+            "text": "", 
+            "title": "async / await"
+        }, 
+        {
+            "location": "/saturday/#los-programadores-no-tienen-porque-ser-malos-disenadores-de-interfaces", 
+            "text": "Sebastian Hermida\n@sbastn  https://howdns.works   Wireframes, esqueleto de una pantalla. Comunicar una idea.  Accesibilidad, software para todo tipo de capacidades y discapacidades f\u00edsicas  Branding, tono y coherencia de la imagen de tu producto  Personas, abstracci\u00f3n del usuario. Entender para quien est\u00e1s creando esta app  UI, ayudar al usuario a realizar una tarea  Usabilidad, quitar problemas, barreras  Dise\u00f1o visual  Entrevistas de usuarios. Te ayuda a saber si est\u00e1s construyendo el producto para las personas correctas.  \u00bfQu\u00e9 quieren conseguir y porqu\u00e9? , y  \u00bfC\u00f3mo lo haces ahora?  Dise\u00f1o de la interacci\u00f3n  Prototipos, wireframes que testean un flujo concreto  Perfomance   Como influimos los desarrolladores en la UX  Dise\u00f1o de la APIs influye en la experiencia del usuario  Docs   Single Responsability Principle: crear pantallas con pocas tareas  Newspaper Code Structure: Lo m\u00e1s importante se tiene que ver r\u00e1pido.   YAGNI: No dise\u00f1es para todas las posibilidades solo para las mas probables  Good Names: texto real  DRY: Confirmaciones de las actividades. Repite, repite...  TDD: Armar, actuar, afirmar comentado en el test  Mock, Stub: stubea lo que no te importa  Abstractions: buscar para un usuario tiene un nivel de abstracci\u00f3n que seleccionar  Exception handling: Error en la base de datos en la pantalla es mal, dale opciones si las hay y si no feedback  Delaying: no preguntar todo a la vez. Tener una conversaci\u00f3n  Consistency: Se debe definir un cat\u00e1logo   DEMO : A partir de una interfaz terrible se va refactorizando a una interfaz limpia   No explotes los datos al usuario, deja que el usuario vea los datos como magia  Que no te moleste el whitespace  Alienado todo.  Coherencia, como le hablas al usuario  Squint, ponte vizco a ver si ves lo que se tiene que ver.  Copia, pero entendiendo   No dise\u00f1es para todos los casos, solo para los m\u00e1s probables", 
+            "title": "Los programadores no tienen porque ser malos dise\u00f1adores de interfaces"
+        }, 
+        {
+            "location": "/saturday/#de-restful-a-graphql-revolucionando-la-forma-de-comunicacion-entre-cliente-y-servidor", 
+            "text": "Jos\u00e9 Mar\u00eda Rodr\u00edguez Hurtado\n@durbon", 
+            "title": "De RESTful a GraphQL: revolucionando la forma de comunicaci\u00f3n entre cliente y servidor"
+        }, 
+        {
+            "location": "/saturday/#rest", 
+            "text": "Breve repaso de REST  Problemas que tiene REST:  Mas peticiones  Exceso de datos  Documentar es un dolor  Pobremente tipada", 
+            "title": "REST"
+        }, 
+        {
+            "location": "/saturday/#graphql", 
+            "text": "Lo desarroll\u00f3 Facebook desde 2012, lo liber\u00f3 en 2015 y lo usan muchas empresas  Es una especificaci\u00f3n   single endpoint  /graphql    Vemos los recursos como un grafo   La  mutation  es como un POST en REST. Sirve para crear o modificar un recurso", 
+            "title": "GraphQL"
+        }, 
+        {
+            "location": "/saturday/#core-principles", 
+            "text": "Es fuertemente tipado   El servidor expone los datos que quiere mostrar. Lo hace a trav\u00e9s de la definici\u00f3n de  schema  Estructura vs Comportamiento  La funci\u00f3n  resolver  es la encargada de obtener los datos al cliente. Se encarga de comprobar si los datos est\u00e1n en el contexto.  Los requerimientos de datos los est\u00e1 definiendo el cliente.     GraphQL Servers desacoplado  Stitching  GraphQL.org  graphql-js", 
+            "title": "Core Principles"
+        }, 
+        {
+            "location": "/saturday/#graphql-ha-muerto-vivan-las-apis-rest-con-hypermedia", 
+            "text": "Jorge Ferrer\n\nJos\u00e9 Manuel Navarro\n@jmnavarro   Primero conoce bien tu contexto y tus necesidades  Conoce las herramientas que tienes a t\u00fa mano  No permitas que otros elijan por ti no m\u00e1s (X is dead)  API Economy  Vuelve a salir la met\u00e1fora del enchufe en las APIs.   Como se pueden evolucionar APIs    REST:   Hypermedia  Shared Vocabulary     Richardson Maturity Model    URL de entrada   Tipos de control estandar  IANA  HAL  Se puede proporcionar una lista de acciones  Siren  Se pueden pasar por la API los campos de un formulario  REST no tiene tipos pero se pueden definir.  schema.org  es una web de tipos de cosas que se pueden encontrar en internet.   En casi cualquier API vas a necesitar crear tus propios tipos. Que no sea el modelo de datos ni el modelo de negocio ya que si cambias, obligar\u00e1s a cambiar a los clientes.  Aislando los clientes de nuestros modelos haciendo un mapeo con  schema.org  Requieren muchas peticiones, se puede manejar con par\u00e1metros. El n\u00famero de peticiones depende de t\u00fa API REST  RESTful Web APIS", 
+            "title": "GraphQL ha muerto: Vivan las APIs REST con Hypermedia"
+        }, 
+        {
+            "location": "/saturday/#claves", 
+            "text": "Atenci\u00f3n al mapeo de conceptos  Estudia y aplica tipos de datos  No ates la API a un formato de respuesta espec\u00edfico", 
+            "title": "Claves"
+        }, 
+        {
+            "location": "/saturday/#desarrollo-en-el-cliente", 
+            "text": "Cada vez hay m\u00e1s cantidad de tipos de clientes  Se programan clientes como un game Loop  RESTful Web Clients     evolvable-apis.org", 
+            "title": "Desarrollo en el cliente"
+        }, 
+        {
+            "location": "/saturday/#la-programacion-funcional-en-la-practica-con-todas-sus-consecuencias", 
+            "text": "Juan Manuel Serrano Hidalgo   Desarrollo de una App de Geofence  Hay que detectar:  Descripci\u00f3n de las funciones  Comorl!!  Se traduce una descripci\u00f3n puramente declarativa    Las descripciones se realizan como DSL", 
+            "title": "La programaci\u00f3n funcional en la pr\u00e1ctica ... con todas sus consecuencias."
+        }, 
+        {
+            "location": "/saturday/#implementar-los-dsl", 
+            "text": "trait  define una interfaz en Scala.  Despu\u00e9s de la definici\u00f3n del interfaz, empieza la implementaci\u00f3n con un framework. Y llega a un punto en el que se muestra que nos hemos acoplado a una interpretaci\u00f3n as\u00edncrona.  Constructor de tipos se a\u00f1ade a la interfaz.", 
+            "title": "Implementar los DSL"
+        }
+    ]
+}
